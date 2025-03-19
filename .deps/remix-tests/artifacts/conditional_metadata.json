@@ -41,12 +41,82 @@
 			{
 				"inputs": [
 					{
+						"internalType": "int256",
+						"name": "num",
+						"type": "int256"
+					}
+				],
+				"name": "isPositive",
+				"outputs": [],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "num",
 						"type": "uint256"
 					}
 				],
 				"name": "recSum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "stopAt5",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "sumBackwards",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "sumExcept3",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -93,11 +163,11 @@
 	},
 	"sources": {
 		".deps/remix-tests/new.sol": {
-			"keccak256": "0x3bd843b56c81093556ea14213c1eadacd21c61b3bb94899afad87658a7039b47",
+			"keccak256": "0xab41400bab21a8dbddef76e4dd0017afffdd3788c010c239a8aeb307812291ff",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://96c73be10af932a5a9c9869462dd34113336b28e1e7bf3baa32a869cb4e0a609",
-				"dweb:/ipfs/QmZVRK5ALQD4c8jdnuQWapWEKiZ922wVcFnjmcRzWWZVpP"
+				"bzz-raw://e2978c8e2aa146a7aea25f64f30e5b0c4d8b7a1821e995f58bf88e484d652da7",
+				"dweb:/ipfs/QmeVrfbC3pgtcEfua6qPvxakmdXJGBYnAmfnWYUm1Bm1tz"
 			]
 		},
 		"hardhat/console.sol": {
