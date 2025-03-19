@@ -7,9 +7,54 @@
 		"abi": [
 			{
 				"inputs": [],
+				"name": "Natural",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "fact",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "incre",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"name": "recSum",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
@@ -48,11 +93,11 @@
 	},
 	"sources": {
 		".deps/remix-tests/new.sol": {
-			"keccak256": "0x4c84c8e6436414917b368afb7315a62f8735a3b38324766f539e952e83836788",
+			"keccak256": "0x3bd843b56c81093556ea14213c1eadacd21c61b3bb94899afad87658a7039b47",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1cd13bb38dd203f3d8070ac6bd90d6f5e6a240dc2f2d4509f83a5c45ae449e15",
-				"dweb:/ipfs/QmeEFWEMjyuMFtFqzBq6bpyiJ1t8ghpt9MTtogWRrdBEJU"
+				"bzz-raw://96c73be10af932a5a9c9869462dd34113336b28e1e7bf3baa32a869cb4e0a609",
+				"dweb:/ipfs/QmZVRK5ALQD4c8jdnuQWapWEKiZ922wVcFnjmcRzWWZVpP"
 			]
 		},
 		"hardhat/console.sol": {
