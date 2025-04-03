@@ -14,9 +14,9 @@
 				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
+						"indexed": true,
 						"internalType": "address",
-						"name": "sender",
+						"name": "from",
 						"type": "address"
 					},
 					{
@@ -24,12 +24,6 @@
 						"internalType": "uint256",
 						"name": "value",
 						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "bytes",
-						"name": "data",
-						"type": "bytes"
 					}
 				],
 				"name": "Deposit",
@@ -39,7 +33,7 @@
 				"anonymous": false,
 				"inputs": [
 					{
-						"indexed": false,
+						"indexed": true,
 						"internalType": "address",
 						"name": "sender",
 						"type": "address"
@@ -49,15 +43,9 @@
 						"internalType": "uint256",
 						"name": "value",
 						"type": "uint256"
-					},
-					{
-						"indexed": false,
-						"internalType": "bytes",
-						"name": "data",
-						"type": "bytes"
 					}
 				],
-				"name": "LogFallback",
+				"name": "EtherReceived",
 				"type": "event"
 			},
 			{
@@ -86,33 +74,10 @@
 				"type": "event"
 			},
 			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
-						"internalType": "address",
-						"name": "sender",
-						"type": "address"
-					},
-					{
-						"indexed": false,
-						"internalType": "uint256",
-						"name": "value",
-						"type": "uint256"
-					}
-				],
-				"name": "receiveFallback",
-				"type": "event"
-			},
-			{
-				"stateMutability": "payable",
-				"type": "fallback"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "to",
+						"name": "account",
 						"type": "address"
 					},
 					{
@@ -123,7 +88,7 @@
 				],
 				"name": "addTokens",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -186,19 +151,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "myBalance",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "totalSupply",
 				"outputs": [
 					{
@@ -214,7 +166,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "to",
+						"name": "recipient",
 						"type": "address"
 					},
 					{
@@ -223,9 +175,9 @@
 						"type": "uint256"
 					}
 				],
-				"name": "transferToken",
+				"name": "transferTokens",
 				"outputs": [],
-				"stateMutability": "payable",
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -246,7 +198,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			".deps/remix-tests/Lab_4_assignment.sol": "TokenTransfer"
+			".deps/remix-tests/lab4.sol": "TokenManagement"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -260,12 +212,12 @@
 		"remappings": []
 	},
 	"sources": {
-		".deps/remix-tests/Lab_4_assignment.sol": {
-			"keccak256": "0x55fec3df95954faf75409367df9ddaacd580c934137941bd98c2bfaae7489028",
+		".deps/remix-tests/lab4.sol": {
+			"keccak256": "0xa4606474efa653d18552ca985a428ec48c94b8a9b94b250146b2f4185f6e8658",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3f1b4210c203dc8338651f8a154e10bf431ceead2cc66150c62bb1f0bf8f94d2",
-				"dweb:/ipfs/QmaDfpEfoMdWxHSyeanhwWvgqX6GapBrpPWqvDUoiQzhhn"
+				"bzz-raw://9c84be7d0e47f5b6d1fb4e34702dc3f6e7a9c36157dd1e50563857a9358a63b9",
+				"dweb:/ipfs/QmQ8cxuPrsDUsrn4mXpNZ5BgddxcS6RqdKNpGdf4mXZDZU"
 			]
 		}
 	},
